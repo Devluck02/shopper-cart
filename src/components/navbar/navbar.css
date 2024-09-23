@@ -1,0 +1,32 @@
+.list-menu {
+    position: relative;
+    
+}
+.dropdown-menu {
+    top: 61px;
+    left: 0px;
+    border-top: 3px solid rgb(69, 10, 10, 1);
+    display: none;
+}
+
+.arrowDropdown .dropdown-menu {
+    display: block;
+}
+.toggleArrowBtn svg{
+    transition: .3s linear;
+}
+.arrowDropdown .toggleArrowBtn svg {
+    transform: rotate(-180deg);
+}
+
+
+@media(max-width: 768px){
+    .dropdown-menu {
+        border-top: 0;
+        top: 49px;
+       
+    }
+    .toggleArrowBtn svg {
+        stroke: #000;
+    }
+}

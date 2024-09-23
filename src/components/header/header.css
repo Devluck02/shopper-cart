@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    background-color: #fff;
+    top: 95px;
+    left: 0;
+    width: 60%;
+    transform: translateX(-100%);
+    transition: 0.2s ease-in-out;
+    height: 100vh;
+    z-index: 999999;
+  }
+
+
+  .mobileMenuOpen .nav {
+    transform: translateX(0);
+  }
+
+  .nav li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .nav li a {
+    color: #000;
+  }
+  .openMenu span:first-child {
+    transform: rotate(45deg);
+    transform-origin: 8px 2px;
+  }
+  .openMenu span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 7px 0px;
+  }
+  .openMenu span:nth-child(2) {
+    display: none;
+  }
+  header button.bg-transparent {
+    height: 24px;
+    width: 27px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+}
+
+header {
+  z-index: 10000;
+}

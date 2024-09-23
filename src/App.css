@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+li{
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .overlay-shadow {
+    overflow: hidden;
+  }
+  .overlay-shadow header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    top: 93px;
+  }
+
+  .overlay-shadow .page-view {
+    pointer-events: none;
+  }
+}
+
+.slick-slider {
+  margin-bottom: 20px;
+}
+

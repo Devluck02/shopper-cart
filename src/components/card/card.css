@@ -1,0 +1,16 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    margin-right: 13px;
+    margin-bottom: 13px;
+
+}
+.card:nth-of-type(4n) {
+    margin-right: 0;
+}
+.custom-stripe {
+    position: absolute;
+    padding: 2px 10px;
+    transform: rotate(-45deg);
+    transform-origin: 130px 150px;
+}
